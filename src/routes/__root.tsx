@@ -80,8 +80,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Alicate Multifuncional" },
-      { name: "description", content: "Alicate multifuncional com frete grátis e 10% off no Pix." },
+      { title: "Kit 3 Tapetes Magnéticos" },
+      { name: "description", content: "Kit com 3 tapetes magnéticos antiperda, frete grátis e 10% off no Pix." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
