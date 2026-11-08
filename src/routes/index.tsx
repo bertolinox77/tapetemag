@@ -10,8 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Toaster } from "@/components/ui/sonner";
-import heroAsset from "@/assets/tapete-kit.webp.asset.json";
-const hero = heroAsset.url;
+import hero from "@/assets/tapete-kit.webp";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { calcularTotal, formatarReais, CHAVE_PIX, PRECO_1_CENTAVOS, PRECO_2_CENTAVOS } from "@/lib/pricing";
 import { criarPedido } from "@/lib/pedidos.functions";
@@ -73,7 +72,7 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground">
       <Toaster />
       <div className="sticky top-0 z-40 bg-gradient-primary text-primary-foreground text-center text-sm font-semibold py-2 px-3 flex items-center justify-center gap-2">
-        <Flame className="size-4" /> Últimos 8 kits · Frete grátis · Promoção termina em <span className="font-display tabular-nums">{tempo}</span>
+        <Flame className="size-4" /> Últimas unidades · Frete grátis · Promoção termina em <span className="font-display tabular-nums">{tempo}</span>
       </div>
 
       <header className="max-w-6xl mx-auto px-5 py-5 flex items-center justify-between">
@@ -93,7 +92,7 @@ function Index() {
             </div>
             <p className="text-sm text-accent font-semibold mt-1">ou {formatarReais(calcularTotal(1, "pix"))} no Pix (10% off)</p>
             <div className="mt-4 flex flex-wrap gap-2 text-sm font-bold">
-              <span className="flex items-center gap-1 rounded-full bg-primary/15 text-primary px-3 py-1"><Flame className="size-4" /> Últimos 8 kits</span>
+              <span className="flex items-center gap-1 rounded-full bg-primary/15 text-primary px-3 py-1"><Flame className="size-4" /> Últimas unidades</span>
               <span className="flex items-center gap-1 rounded-full bg-accent/15 text-accent px-3 py-1"><Truck className="size-4" /> Frete grátis</span>
               <span className="rounded-full border border-border px-3 py-1 tabular-nums">Termina em {tempo}</span>
             </div>
