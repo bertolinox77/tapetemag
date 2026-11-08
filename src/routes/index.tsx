@@ -59,7 +59,7 @@ const beneficios = [
   { icon: Truck, t: "Frete grátis", d: "Entrega para todo o Brasil sem custo." },
 ];
 
-const kit = ["1 tapete magnético grande", "1 tapete magnético médio", "1 tapete magnético pequeno", "Ímã forte para peças de metal", "Base que não risca a pintura"];
+const kit = ["1 tapete magnético grande", "1 tapete magnético médio", "1 tapete magnético pequeno", "Ímã que segura peças pequenas de metal"];
 
 function Index() {
   const tempo = useCountdown();
