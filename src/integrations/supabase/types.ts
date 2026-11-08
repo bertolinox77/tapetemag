@@ -14,7 +14,69 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      pedidos: {
+        Row: {
+          bairro: string
+          cep: string
+          cidade: string
+          complemento: string | null
+          cpf: string
+          created_at: string
+          email: string
+          endereco: string
+          estado: string
+          forma_pagamento: string
+          id: string
+          nome: string
+          numero: string
+          pix_conferido_em: string | null
+          quantidade: number
+          status: string
+          telefone: string
+          total_centavos: number
+        }
+        Insert: {
+          bairro: string
+          cep: string
+          cidade: string
+          complemento?: string | null
+          cpf: string
+          created_at?: string
+          email: string
+          endereco: string
+          estado: string
+          forma_pagamento?: string
+          id?: string
+          nome: string
+          numero: string
+          pix_conferido_em?: string | null
+          quantidade: number
+          status?: string
+          telefone: string
+          total_centavos: number
+        }
+        Update: {
+          bairro?: string
+          cep?: string
+          cidade?: string
+          complemento?: string | null
+          cpf?: string
+          created_at?: string
+          email?: string
+          endereco?: string
+          estado?: string
+          forma_pagamento?: string
+          id?: string
+          nome?: string
+          numero?: string
+          pix_conferido_em?: string | null
+          quantidade?: number
+          status?: string
+          telefone?: string
+          total_centavos?: number
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
